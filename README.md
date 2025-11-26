@@ -1,12 +1,12 @@
 # RL2025_Homework3
 Clone this repo in your src folder of your ros2 workspace.
-To run the bridge between ros2 and px4 run this command:
-```
-./DDS_run.sh
-```
 then you must build the px4_msgs package, thus run the following command in the ros2 workspace:
 ```
 colcon build --symlink-install --packages-select px4_msgs
+```
+To run the bridge between ros2 and px4 run this command in the src folder:
+```
+./DDS_run.sh
 ```
 then, to run the gazebo simulation of our customized drone model, run the following command in the PX4-Autopilot folder
 ```
